@@ -32,7 +32,7 @@
             border: none; 
             border-radius: 4px; 
             cursor: pointer; 
-            transition: background-color 0.3s; 
+            transition: background-color 1.4s; 
         }
         button:hover {
             background-color: #0056b3; 
@@ -63,5 +63,24 @@
     <div id="dashboard">
         <button id="logout_button">Logout</button>
     </div>
+
+    <script>
+        // Get all buttons
+        const buttons = document.querySelectorAll('button');
+
+        // Function to change button color
+        function changeColor(button) {
+           const colors = ['#f44336', '#4caf50', '#ff9800', '#9c27b0', '#ff00ff']; 
+            let index = Math.floor(Math.random() * colors.length);
+            button.style.backgroundColor = colors[index];
+        }
+
+        // Add click event listener to each button
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                changeColor(button);
+            });
+        });
+    </script>
 </body>
 </html>
