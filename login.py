@@ -6,7 +6,7 @@ import time
 driver = webdriver.Chrome()
 
 # Navigate to the local file
-driver.get("file:///C:/Users/Aakarsh Roy/Pictures/selenium/test_page.html")
+driver.get("enter the path")
 
 # Find the username field and enter a value
 username_field = driver.find_element("id", "username")
@@ -21,7 +21,7 @@ login_button = driver.find_element("id", "login_button")
 login_button.click()
 
 # Wait for the login process to complete
-time.sleep(3)
+time.sleep(4)
 
 # Check if the username and password are not empty and match
 if username_field.get_attribute("value") != "" and username_field.get_attribute("value") == password_field.get_attribute("value"):

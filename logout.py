@@ -6,7 +6,7 @@ import time
 driver = webdriver.Chrome()
 
 # Navigate to the local file
-driver.get("file:///C:/Users/Aakarsh Roy/Pictures/selenium/test_page.html")
+driver.get("enter the path")
 
 # Find the logout button and click it
 logout_button = driver.find_element("id", "logout_button")

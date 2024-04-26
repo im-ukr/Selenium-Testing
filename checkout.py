@@ -6,7 +6,7 @@ import time
 driver = webdriver.Chrome()
 
 # Navigate to the local file
-driver.get("file:///C:/Users/Aakarsh Roy/Pictures/selenium/test_page.html")
+driver.get("enter the path")
 
 # Find the address, payment mode, and amount fields and enter values
 address_field = driver.find_element("id", "address")
@@ -23,7 +23,7 @@ checkout_button = driver.find_element("id", "checkout_button")
 checkout_button.click()
 
 # Wait for the checkout process to complete
-time.sleep(3)
+time.sleep(5)
 
 # Check if any of the fields are empty
 if address_field.get_attribute("value") == "" or payment_mode_field.get_attribute("value") == "" or amount_field.get_attribute("value") == "":

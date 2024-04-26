@@ -6,7 +6,7 @@ import time
 driver = webdriver.Chrome()
 
 # Navigate to the local file
-driver.get("file:///C:/Users/Aakarsh Roy/Pictures/selenium/test_page.html")
+driver.get("enter the path")
 
 # Find the product name field and enter a value
 product_name_field = driver.find_element("id", "product_name")
@@ -17,7 +17,7 @@ add_to_cart_button = driver.find_element("id", "add_to_cart_button")
 add_to_cart_button.click()
 
 # Wait for the add to cart process to complete
-time.sleep(3)
+time.sleep(4)
 
 # Check if the product was added to the cart
 if product_name_field.get_attribute("value") == "":
